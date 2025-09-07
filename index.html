@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognify</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-bg': 'var(--bg-primary)',
+                        'dark-secondary': 'var(--bg-secondary)',
+                        'dark-text': 'var(--text-primary)',
+                        'dark-highlight': 'var(--highlight-color)',
+                        'light-bg': 'var(--light-bg)',
+                        'light-secondary': 'var(--light-secondary)',
+                        'light-text': 'var(--light-text)',
+                        'light-highlight': 'var(--light-highlight)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="theme-dark bg-[var(--bg-primary)] text-[var(--text-primary)] font-sans">
 
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-3xl font-extrabold font-mono">
+                        <span class="text-[var(--highlight-color)]">C</span><span class="text-[var(--text-primary)]]">ognify</span>
+                    </a>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="#home" class="nav-link text-[var(--text-primary)] hover:text-[var(--highlight-color)] px-3 py-2 rounded-md font-medium transition-colors">Home</a>
+                    <a href="#about" class="nav-link text-[var(--text-primary)] hover:text-[var(--highlight-color)] px-3 py-2 rounded-md font-medium transition-colors">About</a>
+                    <a href="#courses" class="nav-link text-[var(--text-primary)] hover:text-[var(--highlight-color)] px-3 py-2 rounded-md font-medium transition-colors">Courses</a>
+                    <a href="#contact" class="nav-link text-[var(--text-primary)] hover:text-[var(--highlight-color)] px-3 py-2 rounded-md font-medium transition-colors">Contact</a>
+                    <a href="#login" class="nav-link text-white bg-gray-600 hover:bg-gray-700 px-4 py-2 rounded-full font-bold transition-colors">Login</a>
+                    <a href="#signup" class="nav-link text-white bg-[var(--highlight-color)] hover:bg-[var(--highlight-hover-color)] px-4 py-2 rounded-full font-bold transition-colors">Sign Up</a>
+                    <button id="theme-toggle" class="p-2 rounded-full transition-colors hover:bg-[var(--bg-secondary)]">
+                        <svg id="theme-icon" class="w-6 h-6 text-[var(--icon-color)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            </svg>
+                    </button>
+                </div>
+
+                <div class="-mr-2 flex md:hidden">
+                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-[var(--text-primary)] hover:bg-[var(--bg-secondary)] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[var(--highlight-color)]">
+                        <span class="sr-only">Open main menu</span>
+                        <svg id="menu-open-icon" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg id="menu-close-icon" class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                    <button id="theme-toggle-mobile" class="p-2 ml-2 rounded-full transition-colors hover:bg-[var(--bg-secondary)]">
+                         <svg id="theme-icon-mobile" class="w-6 h-6 text-[var(--icon-color)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:hidden mobile-menu bg-[var(--bg-primary)]" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 text-center">
+                <a href="#home" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-[var(--text-primary)] hover:text-[var(--highlight-color)] transition-colors">Home</a>
+                <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-[var(--text-primary)] hover:text-[var(--highlight-color)] transition-colors">About</a>
+                <a href="#courses" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-[var(--text-primary)] hover:text-[var(--highlight-color)] transition-colors">Courses</a>
+                <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-[var(--text-primary)] hover:text-[var(--highlight-color)] transition-colors">Contact</a>
+                <a href="#login" class="mobile-nav-link block w-4/5 mx-auto py-2 rounded-full text-base font-bold text-white bg-gray-600 hover:bg-gray-700 transition-colors">Login</a>
+                <a href="#signup" class="mobile-nav-link block w-4/5 mx-auto py-2 rounded-full text-base font-bold text-white bg-[var(--highlight-color)] hover:bg-[var(--highlight-hover-color)] transition-colors">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="relative h-screen flex flex-col items-center justify-center text-center p-4 overflow-hidden">
+            <div class="fixed inset-0 overflow-hidden -z-10 bg-gradient-to-br from-[var(--bg-primary)] to-[var(--bg-secondary)]">
+                <div class="animated-grid-background"></div>
+            </div>
+
+            <h1 class="text-6xl md:text-8xl font-extrabold leading-tight mb-4 drop-shadow-md animate-fade-in-up">
+                Empower Knowledge
+            </h1>
+            <p class="text-xl md:text-2xl max-w-2xl text-[var(--text-secondary)] animate-fade-in-up delay-300">Unlock your potential. Explore, learn, and master new skills.</p>
+        </section>
+
+        <section id="about" class="py-20 px-4 bg-[var(--bg-secondary)]">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-5xl font-extrabold text-[var(--highlight-color)] mb-6">About Us</h2>
+                <p class="text-lg leading-relaxed text-[var(--text-primary)]">At Cognify, we believe in empowering individuals through innovative and accessible online education. Our platform is designed to provide a rich learning experience that is both engaging and effective.</p>
+                <p class="mt-4 text-lg leading-relaxed text-[var(--text-secondary)]">We offer a curated selection of courses taught by industry leaders, ensuring you gain practical, in-demand skills. Join our community and transform your future.</p>
+            </div>
+        </section>
+
+        <section id="courses" class="py-20 px-4">
+            <div class="max-w-7xl mx-auto text-center">
+                <h2 class="text-5xl font-extrabold text-[var(--highlight-color)] mb-12">Explore Our Curated Courses</h2>
+                <div id="course-list" class="flex overflow-x-auto gap-8 py-4 px-2 scrollbar-hide">
+                    <div class="bg-[var(--bg-secondary)] min-w-[300px] rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                        <img src="https://placehold.co/600x400/1e2a4a/7C7E83?text=Web+Development" alt="Web Development Course" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-2 text-[var(--text-primary)]">Full-Stack Web Development</h3>
+                            <p class="text-[var(--text-secondary)] mb-4">Build powerful web applications with modern frameworks and tools.</p>
+                            <a href="#" class="inline-block bg-[var(--highlight-color)] text-[var(--text-inverted)] px-6 py-2 rounded-full font-bold hover:bg-[var(--highlight-hover-color)] transition-colors">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="bg-[var(--bg-secondary)] min-w-[300px] rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                        <img src="https://placehold.co/600x400/1e2a4a/7C7E83?text=Data+Science" alt="Data Science Course" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-2 text-[var(--text-primary)]">Applied Data Science & ML</h3>
+                            <p class="text-[var(--text-secondary)] mb-4">Transform data into insights with machine learning algorithms.</p>
+                            <a href="#" class="inline-block bg-[var(--highlight-color)] text-[var(--text-inverted)] px-6 py-2 rounded-full font-bold hover:bg-[var(--highlight-hover-color)] transition-colors">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="bg-[var(--bg-secondary)] min-w-[300px] rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                        <img src="https://placehold.co/600x400/1e2a4a/7C7E83?text=UI%2FUX" alt="UI/UX Design Course" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-2 text-[var(--text-primary)]">Advanced UI/UX Design</h3>
+                            <p class="text-[var(--text-secondary)] mb-4">Craft intuitive and delightful user experiences for digital products.</p>
+                            <a href="#" class="inline-block bg-[var(--highlight-color)] text-[var(--text-inverted)] px-6 py-2 rounded-full font-bold hover:bg-[var(--highlight-hover-color)] transition-colors">Enroll Now</a>
+                        </div>
+                    </div>
+                    <div class="bg-[var(--bg-secondary)] min-w-[300px] rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                        <img src="https://placehold.co/600x400/1e2a4a/7C7E83?text=Mobile+App" alt="Mobile App Course" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-2 text-[var(--text-primary)]">Cross-Platform Mobile Dev</h3>
+                            <p class="text-[var(--text-secondary)] mb-4">Develop high-performance mobile apps for iOS and Android simultaneously.</p>
+                            <a href="#" class="inline-block bg-[var(--highlight-color)] text-[var(--text-inverted)] px-6 py-2 rounded-full font-bold hover:bg-[var(--highlight-hover-color)] transition-colors">Enroll Now</a>
+                        </div>
+                    </div>
+                     <div class="bg-[var(--bg-secondary)] min-w-[300px] rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer">
+                        <img src="https://placehold.co/600x400/1e2a4a/7C7E83?text=Cybersecurity" alt="Cybersecurity Course" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-2 text-[var(--text-primary)]">Cybersecurity Essentials</h3>
+                            <p class="text-[var(--text-secondary)] mb-4">Protect digital assets and networks from evolving cyber threats.</p>
+                            <a href="#" class="inline-block bg-[var(--highlight-color)] text-[var(--text-inverted)] px-6 py-2 rounded-full font-bold hover:bg-[var(--highlight-hover-color)] transition-colors">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 px-4 bg-[var(--bg-secondary)]">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-5xl font-extrabold text-[var(--highlight-color)] mb-6">Get in Touch</h2>
+                <p class="text-lg leading-relaxed mb-8 text-[var(--text-primary)]">Have questions about our courses or platform? We're here to help you succeed.</p>
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <input type="text" id="name" name="name" placeholder="Your Name" class="w-full px-4 py-3 rounded-md bg-[var(--bg-primary)] border border-[var(--border-color)] focus:border-[var(--highlight-color)] focus:ring-1 focus:ring-[var(--highlight-color)] transition-colors outline-none text-[var(--text-primary)]">
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-md bg-[var(--bg-primary)] border border-[var(--border-color)] focus:border-[var(--highlight-color)] focus:ring-1 focus:ring-[var(--highlight-color)] transition-colors outline-none text-[var(--text-primary)]">
+                    </div>
+                    <div>
+                        <textarea id="message" name="message" rows="4" placeholder="Your Message" class="w-full px-4 py-3 rounded-md bg-[var(--bg-primary)] border border-[var(--border-color)] focus:border-[var(--highlight-color)] focus:ring-1 focus:ring-[var(--highlight-color)] transition-colors outline-none text-[var(--text-primary)]"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-3 rounded-md bg-[var(--highlight-color)] text-[var(--text-inverted)] font-bold text-lg hover:bg-[var(--highlight-hover-color)] transition-colors duration-300 transform hover:scale-105">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-8 text-center text-[var(--text-secondary)] text-sm">
+        &copy; 2025 Cognify. All rights reserved.
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>
