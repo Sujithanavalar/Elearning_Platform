@@ -19,6 +19,7 @@ This project is **frontend-only** and designed as a demonstration of clean web d
 ---
 
 ## Project Structure
+'''
 Elearning_platform
 │── src/
 │ ├── index.html # Main entry point
@@ -27,6 +28,7 @@ Elearning_platform
 │
 │── LICENSE # Project license
 │── README.md # Documentation
+'''
 
 ---
 
