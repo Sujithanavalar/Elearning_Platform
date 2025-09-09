@@ -35,30 +35,30 @@ Elearning_platform
 ### Homepage  
 The homepage features a modern layout with a responsive navigation bar, theme toggle, and smooth scrolling between sections.  
 - **Light Theme**  
-  ![Homepage Light](./assets/images/homepage_light.png)  
+  ![Homepage Light](assets/images/home_Lighttheme.png)  
 - **Dark Theme**  
-  ![Homepage Dark](./assets/images/homepage_dark.png)  
+  ![Homepage Dark](assets/images/home_Darktheme.png)  
 
 ### About Section  
 The about section introduces the platform’s purpose and highlights the benefits of learning online with a clean and minimal design.  
 - **Light Theme**  
-  ![About Light](./assets/images/about_light.png)  
+  ![About Light](assets/images/About_Lighttheme.png)  
 - **Dark Theme**  
-  ![About Dark](./assets/images/about-dark.png)  
+  ![About Dark](assets/images/About_Darktheme.png)  
 
 ### Courses Section  
 The courses section presents a structured catalog of available courses with descriptions and clear enrollment options.  
 - **Light Theme**  
-  ![Courses Light](./assets/images/courses-light.png)  
+  ![Courses Light](assets/images/course_Lighttheme.png)  
 - **Dark Theme**  
-  ![Courses Dark](./assets/images/courses-dark.png)  
+  ![Courses Dark](assets/images/Course_Darktheme.png)  
 
 ### Contact Section  
 The contact section provides a simple and professional interface for users to reach out, including a form and essential details.  
 - **Light Theme**  
-  ![Contact Light](./assets/images/contact-light.png)  
+  ![Contact Light](assets/images/contact_Lighttheme.png)  
 - **Dark Theme**  
-  ![Contact Dark](./assets/images/contact-dark.png)  
+  ![Contact Dark](assets/images/contact_Darktheme.png)  
 
 ---
 
