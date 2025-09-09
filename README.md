@@ -33,16 +33,32 @@ Elearning_platform
 ## Screenshots
 
 ### Homepage  
-The landing section with bold typography, navigation menu, and theme toggle.  
-![Homepage](./images/homepage.png)
+The homepage features a modern layout with a responsive navigation bar, theme toggle, and smooth scrolling between sections.  
+- **Light Theme**  
+  ![Homepage Light](./assets/images/homepage_light.png)  
+- **Dark Theme**  
+  ![Homepage Dark](./assets/images/homepage_dark.png)  
 
 ### About Section  
-Information about Cognify’s mission and value for learners.  
-![About](./images/about.png)
+The about section introduces the platform’s purpose and highlights the benefits of learning online with a clean and minimal design.  
+- **Light Theme**  
+  ![About Light](./assets/images/about_light.png)  
+- **Dark Theme**  
+  ![About Dark](./assets/images/about-dark.png)  
 
 ### Courses Section  
-Curated courses with descriptions and enrollment options.  
-![Courses](./images/courses.png)
+The courses section presents a structured catalog of available courses with descriptions and clear enrollment options.  
+- **Light Theme**  
+  ![Courses Light](./assets/images/courses-light.png)  
+- **Dark Theme**  
+  ![Courses Dark](./assets/images/courses-dark.png)  
+
+### Contact Section  
+The contact section provides a simple and professional interface for users to reach out, including a form and essential details.  
+- **Light Theme**  
+  ![Contact Light](./assets/images/contact-light.png)  
+- **Dark Theme**  
+  ![Contact Dark](./assets/images/contact-dark.png)  
 
 ---
 
